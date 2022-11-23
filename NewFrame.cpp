@@ -39,7 +39,7 @@ NewFrame::NewFrame(const wxString &title)
 
     wxStaticText *thetitle = new wxStaticText(panel, -1, wxT("Email"));
     wxStaticText *password = new wxStaticText(panel, -1, wxT("Password"));
-   Confirm=new wxButton (panel,IdButtonConfirm,_T ("Ok"),wxDefaultPosition,wxDefaultSize,0);
+    Confirm=new wxButton (panel,IdButtonConfirm,_T ("Ok"),wxDefaultPosition,wxDefaultSize,0);
 
 
 

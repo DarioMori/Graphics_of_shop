@@ -4,6 +4,7 @@
 //
 #include "wx/wxhtml.h"
 #include "wx/wx.h"
+#include "Frame.h"
 
 #ifndef BUTTON_WXWIDGETS_REGISTERFRAME_H
 #define BUTTON_WXWIDGETS_REGISTERFRAME_H

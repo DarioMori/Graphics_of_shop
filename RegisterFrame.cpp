@@ -7,6 +7,7 @@
 const long RegisterFrame::IdButtonConfirm =::wxNewId();
 
 BEGIN_EVENT_TABLE (RegisterFrame, wxFrame)
+
                 EVT_BUTTON(IdButtonConfirm, RegisterFrame::Register)
 
 END_EVENT_TABLE()
@@ -67,9 +68,17 @@ RegisterFrame::RegisterFrame(const wxString &title):
     panel->SetSizer(hbox);
     //this->SetSizer(MainBox);
 
-    Centre();
+    Centre(wxBOTH);
+
+    std::string t=tc1->GetValue().ToStdString();
+    std::string b_n=tc2->GetValue().ToStdString();
+    std::string a=tc3->GetValue().ToStdString();
+    std::string c=tc4->GetValue().ToStdString();
+    std::string u=tc5->GetValue().ToStdString();
+    std::string p=m_passwordText->GetValue().ToStdString();
 }
 
 void RegisterFrame::Register(wxCommandEvent &event) {
-
+    Frame *MainWin = new Frame(_T("ciao"), wxPoint(50, 20), wxSize(500,300));
+    MainWin->Show(TRUE);
 }
