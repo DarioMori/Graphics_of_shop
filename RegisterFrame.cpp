@@ -63,6 +63,13 @@ RegisterFrame::RegisterFrame(const wxString &title):
 
     hbox->Add(fgs, 1, wxALL, 10);
 
+    std::string t=tc1->GetValue().ToStdString();
+    std::string b_n=tc2->GetValue().ToStdString();
+    std::string a=tc3->GetValue().ToStdString();
+    std::string c=tc4->GetValue().ToStdString();
+    std::string u=tc5->GetValue().ToStdString();
+    std::string p=m_passwordText->GetValue().ToStdString();
+
 
     panel->SetSizer(hbox);
     //this->SetSizer(MainBox);
