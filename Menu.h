@@ -5,10 +5,10 @@
 #include "wx/wx.h"
 #ifndef BUTTON_WXWIDGETS_FRAME_H
 #define BUTTON_WXWIDGETS_FRAME_H
-class Frame: public wxFrame
+class Menu: public wxFrame
 {
 public:
-    Frame(const wxString& title, const wxPoint& pos, const wxSize& size);
+    Menu(const wxString& title, const wxPoint& pos, const wxSize& size);
 private:
     void OnHello(wxCommandEvent& event);
     void OnExit(wxCommandEvent& event);

@@ -8,11 +8,11 @@
 
 
 
-class MyFrame: public wxFrame // MainFrame is the class for our window,
+class SelectFrame: public wxFrame // MainFrame is the class for our window,
 {
     // It contains the window and all objects in it
 public:
-    MyFrame( const wxString &title, const wxPoint &pos, const wxSize &size );
+    SelectFrame(const wxString &title, const wxPoint &pos, const wxSize &size );
 
     static const long IdButtonAccess;
     static const long IdButtonRegister;

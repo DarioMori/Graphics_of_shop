@@ -2,7 +2,7 @@
 // Created by dario on 16/11/2022.
 //
 
-#include"Frame.h"
+#include"Menu.h"
 #include "wx/wx.h"
 #include "MyApp.h"
 
@@ -19,17 +19,17 @@ enum
 };
 
 
-wxBEGIN_EVENT_TABLE(Frame, wxFrame)
-     EVT_MENU(ID_Hello,   Frame::OnHello)
-     EVT_MENU(wxID_EXIT,  Frame::OnExit)
-     EVT_MENU(wxID_ABOUT, Frame::OnAbout)
-     EVT_MENU(ID_I,   Frame::OnI)
+wxBEGIN_EVENT_TABLE(Menu, wxFrame)
+     EVT_MENU(ID_Hello, Menu::OnHello)
+     EVT_MENU(wxID_EXIT, Menu::OnExit)
+     EVT_MENU(wxID_ABOUT, Menu::OnAbout)
+     EVT_MENU(ID_I, Menu::OnI)
 
 wxEND_EVENT_TABLE()
 
 
 
-Frame::Frame(const wxString& title, const wxPoint& pos, const wxSize& size)
+Menu::Menu(const wxString& title, const wxPoint& pos, const wxSize& size)
         : wxFrame(NULL, wxID_ANY, title, pos, size)
 {
 
@@ -52,20 +52,20 @@ Frame::Frame(const wxString& title, const wxPoint& pos, const wxSize& size)
 }
 
 
-void Frame::OnExit(wxCommandEvent& event)
+void Menu::OnExit(wxCommandEvent& event)
 {
     Close( true );
 }
-void Frame::OnAbout(wxCommandEvent& event)
+void Menu::OnAbout(wxCommandEvent& event)
 {
     wxMessageBox( "This is a wxWidgets' Hello world sample",
                   "About Hello World", wxOK | wxICON_INFORMATION );
 }
-void Frame::OnHello(wxCommandEvent& event)
+void Menu::OnHello(wxCommandEvent& event)
 {
     wxLogMessage("Hello world from wxWidgets!");
 }
 
-void Frame::OnI(wxCommandEvent& event){
+void Menu::OnI(wxCommandEvent& event){
     wxLogMessage("I'm here");
 }

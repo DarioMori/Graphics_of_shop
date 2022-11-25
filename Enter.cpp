@@ -2,24 +2,24 @@
 // Created by dario on 16/11/2022.
 //
 
-#include "MyFrame.h"
+#include "SelectFrame.h"
 #include "wx/wx.h"
-#include "NewFrame.h"
+#include "Enter.h"
 #include "MyApp.h"
-#include "Frame.h"
+#include "Menu.h"
 
 
 wxTextCtrl *password;
-const long NewFrame::IdButtonConfirm =::wxNewId();
+const long Enter::IdButtonConfirm =::wxNewId();
 
-BEGIN_EVENT_TABLE (NewFrame, wxFrame)
-        EVT_BUTTON(IdButtonConfirm, NewFrame::Access)
+BEGIN_EVENT_TABLE (Enter, wxFrame)
+        EVT_BUTTON(IdButtonConfirm, Enter::Access)
 
 END_EVENT_TABLE() // The button is pressed
 
 
 
-NewFrame::NewFrame(const wxString &title)
+Enter::Enter(const wxString &title)
         : wxFrame(NULL, -1, title, wxPoint(-1, -1), wxSize(365, 250)){
 
 
@@ -66,7 +66,7 @@ NewFrame::NewFrame(const wxString &title)
     Centre();
 }
 
-void NewFrame::Access(wxCommandEvent &event) {
+void Enter::Access(wxCommandEvent &event) {
     int x;
 
 }

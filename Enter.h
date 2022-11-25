@@ -7,9 +7,9 @@
 #define BUTTON_WXWIDGETS_NEWFRAME_H
 
 
-class NewFrame : public wxFrame{
+class Enter : public wxFrame{
     public:
-        NewFrame(const wxString& title);
+        Enter(const wxString& title);
         static const long IdButtonConfirm;
 
         DECLARE_EVENT_TABLE()
