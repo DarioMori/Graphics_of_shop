@@ -64,6 +64,10 @@ Enter::Enter(const wxString &title)
     //this->SetSizer(MainBox);
 
     Centre();
+    std::string e = tc1->GetValue().ToStdString();
+    std::string p = m_passwordText->GetValue().ToStdString();
+
+
 }
 
 void Enter::Access(wxCommandEvent &event) {
